@@ -1,0 +1,202 @@
+
+body{
+  width: 100vw;
+}
+
+main{
+  width: 30rem;
+  height: 40rem;
+  margin: 0rem auto;
+  position: relative;
+}
+.back{
+  color: #70B5E4;
+font-family: 'Oswald', sans-serif;
+margin-left: 3rem;
+font-size: 1.5rem;
+}
+
+p{
+  margin-left: 1rem;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+.fotoContact{
+  background-image: url(contact.jpg);
+  background-size: cover;
+  height: 14rem;
+  width: 14rem;
+  border: solid 2rem white;
+  z-index: 3;
+  position: absolute;
+  left: 7rem;
+  top: 5rem;
+
+}
+
+.blauw{
+	z-index: 1;
+	background: #70B5E4;
+	width: 14rem;
+	height: 9rem;
+	position: absolute;
+	right: 2rem;
+	top: 1.5rem;
+
+}
+.roos{
+	z-index: 4;
+	background: #F7D0E2;
+	width: 9rem;
+	height: 7rem;
+	position: absolute;
+  right: 3rem;
+	top: 17rem;
+
+}
+.munt{
+	z-index: 5;
+	background: #3D867E;
+	width: 17rem;
+	height: 1.5rem;
+	position: absolute;
+	left: 2rem;
+	top: 8rem;
+}
+.lila{
+	z-index: 2;
+	background: #c6b1e3;
+	width: 14rem;
+	height: 14rem;
+	position: absolute;
+  left: 2rem;
+	top: 18rem;
+
+}
+.geel{
+	z-index: 6;
+	background: #f0e68c;
+	width: 1.5rem;
+	height: 30rem;
+	position: absolute;
+  left: 11rem;
+	top: 4rem;
+
+}
+
+.lila p{
+  margin-top: 6rem;
+}
+
+.geel p{
+  margin-left: 0.5rem;
+}
+
+.munt p{
+  margin-top: 0rem;
+}
+
+
+.lijn1{
+  display: none;
+}
+.lijn2{
+  display: none;
+}
+.lijn3{
+  display: none;
+}
+.lijn4{
+  display: none;
+}
+
+@keyframes wissen {
+  100% {
+    transform: scale(0,1);
+  }
+}
+
+@keyframes tonen {
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes wissen2 {
+  100% {
+    transform: scale(1,0);
+  }
+}
+
+
+
+
+@media (min-width: 800px) {
+
+}
+
+@media (min-width: 1100px) {
+body{
+  position: relative;
+
+}
+.lijn1{
+  display: block;
+  width: 100vw;
+  margin: 1vh auto;
+  border-bottom: 5px solid #f0e68c ;
+  animation-name: wissen;
+  animation-duration: 9s;
+  transform-origin: top right;
+  animation-iteration-count: infinite;
+  mix-blend-mode: luminosity;
+  position: absolute;
+  top: 8rem;
+  z-index: 8;
+}
+.lijn2{
+    display: block;
+    width: 100vw;
+    margin: 1vh auto;
+  border-bottom: 5px solid #F7D0E2;
+     animation-name: tonen;
+     animation-duration: 7s;
+     transform: scaleX(0);
+     transform-origin: top left;
+     animation-iteration-count: infinite;
+     mix-blend-mode: luminosity;
+     position: absolute;
+     top: 30rem;
+     z-index: 9;
+}
+.lijn3{
+    display: block;
+    height: 95vh;
+    margin: 1vh auto;
+    border-left: 5px solid #70B5E4;
+    animation-name: wissen2;
+    animation-duration: 9s;
+    transform-origin: left top;
+     animation-iteration-count: infinite;
+     mix-blend-mode: luminosity;
+     position: absolute;
+     top:0rem;
+     left: 15rem;
+     z-index: 9;
+}
+.lijn4{
+    display: block;
+    height: 95vh;
+    margin: 1vh auto;
+    border-left: 5px solid #c6b1e3;
+    animation-name: wissen2;
+    animation-duration: 7s;
+    transform-origin: right top;
+     animation-iteration-count: infinite;
+     mix-blend-mode: luminosity;
+     position: absolute;
+     left: 70rem;
+     top: 0rem;
+     z-index: 9;
+}
+}

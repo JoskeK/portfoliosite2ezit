@@ -1,0 +1,187 @@
+
+
+body {
+	width: 90vw;
+	margin: 5vw 3rem;
+}
+header{
+  margin-bottom: 5rem;
+}
+
+main {
+	column-count: 1; /* multi-column layout! */
+	/* https://www.smashingmagazine.com/2019/01/css-multiple-column-layout-multicol/ */
+}
+.balk{
+  width: 90%;
+  height: auto;
+  background-color: #70B5E4;
+}
+.back{
+  color: #70B5E4;
+font-family: 'Oswald', sans-serif;
+font-size: 1.5rem;
+}
+p{
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.fotos{
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+.me1,.me2,.me3,.me4,.me5, .me6,.me7,.me8,.me9,.me10,.me11,.me12,.me13,.me14,.me15,.me16,.me17,.me18,.me19,.me20,.me21,.me22,.me23,.me25,.me26,.me27,.me28,.me29,.me30,.me31,.me32,.me33{
+  border-radius: 50%;
+  background-size: cover;
+  height: 19rem;
+  width: 19rem;
+	margin-bottom: 2rem;
+  display: block;
+	margin-bottom: 3rem;
+	break-inside: avoid;
+}
+
+
+.me34{
+  border-radius: 50%;
+  background-size: cover;
+  height: 19rem;
+  width: 19rem;
+	margin-bottom: 2rem;
+  display: block;
+	margin-bottom: 3rem;
+	break-inside: avoid;
+}
+
+.fotos div {
+  transition: filter .3s ease-in-out;
+	-webkit-filter: grayscale(100%);
+}
+
+.fotos div:hover {
+	-webkit-filter: grayscale(0%);
+}
+
+.me1{
+  background-image: url(me1.JPG);
+}
+.me2{
+  background-image: url(me2.JPG);
+}
+.me3{
+  background-image: url(me3.jpg);
+}
+.me4{
+  background-image: url(me4.JPG);
+}
+.me5{
+  background-image: url(me5.JPG);
+}
+.me6{
+  background-image: url(me6.JPG);
+}
+.me7{
+  background-image: url(me7.JPG);
+}
+.me8{
+  background-image: url(me8.JPG);
+}
+.me9{
+  background-image: url(me9.JPG);
+}
+.me10{
+  background-image: url(me10.JPG);
+}
+.me11{
+  background-image: url(me11.JPG);
+}
+.me12{
+  background-image: url(me12.JPG);
+}
+.me13{
+  background-image: url(me13.JPG);
+}
+.me14{
+  background-image: url(me14.JPG);
+}
+.me15{
+  background-image: url(me15.JPG);
+}
+.me16{
+  background-image: url(me16.JPG);
+}
+.me17{
+  background-image: url(me17.JPG);
+}
+.me18{
+  background-image: url(me18.JPG);
+}
+.me19{
+  background-image: url(me19.JPG);
+}
+.me20{
+  background-image: url(me20.JPG);
+}
+.me21{
+  background-image: url(me21.JPG);
+}
+.me22{
+  background-image: url(me22.JPG);
+}
+.me23{
+  background-image: url(me23.JPG);
+}
+.me25{
+  background-image: url(me25.JPG);
+}
+.me26{
+  background-image: url(me26.JPG);
+}
+.me27{
+  background-image: url(me27.JPG);
+}
+.me28{
+  background-image: url(me28.JPG);
+}
+.me29{
+  background-image: url(me29.JPG);
+}
+.me30{
+  background-image: url(me30.JPG);
+}
+.me31{
+  background-image: url(me31.JPG);
+}
+.me32{
+  background-image: url(me32.JPG);
+}
+.me33{
+  background-image: url(me33.JPG);
+}
+.me34{
+  background-image: url(me34.JPG);
+}
+
+
+
+@media (min-width: 800px) {
+	.fotos {
+		column-count: 2;
+		column-gap: 5vw;
+	}
+}
+
+@media (min-width: 1100px) {
+	.fotos{
+		column-count: 3;
+		column-gap: 5vw;
+	}
+  .balk{
+    margin-left: 5rem;
+  }
+}
